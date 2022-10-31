@@ -171,8 +171,10 @@ class BootstrapEmail {
 		this._mobileStyles = queries;
 
 		for (let i in this._vars) {
-			if (vars.hasOwnProperty(i)) {
-				this._vars[i] = parseInt(vars[i].value);
+			if (vars !== undefined) {
+				if (vars.hasOwnProperty(i)) {
+					this._vars[i] = parseInt(vars[i].value);
+				}
 			}
 		}
 	}
