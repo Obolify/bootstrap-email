@@ -82,9 +82,9 @@ $colors: map-merge(
 		), $colors
 );
 
-$primary: $blue !default;
-$secondary: $gray-600 !default;
-$success: $green !default;
+$primary: #134158 !default;
+$secondary: #E4D7D0 !default;
+$success: #4B8378 !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
@@ -131,7 +131,7 @@ $spacers: map-merge(
 // 3. BODY
 //*****************************************
 
-$body-bg: $white !default;
+$body-bg: $secondary !default;
 $body-color: $gray-900 !default;
 
 //*****************************************
@@ -154,7 +154,12 @@ $container-padding-x: math.round(math.div($grid-gutter-width, 2)) !default;
 // 6. GENERAL SETTINGS
 //*****************************************
 
-$font-family-sans-serif: Helvetica, Arial, sans-serif !default;
+@font-face {
+	font-family: "Righteous";
+	src: url("https://obolify.com/assets/fonts/Righteous.ttf");
+}
+
+$font-family-sans-serif: Righteous !default;
 $font-family-monospace: "Courier New", Courier, monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
