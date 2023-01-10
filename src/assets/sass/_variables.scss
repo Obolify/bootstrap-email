@@ -155,17 +155,17 @@ $container-padding-x: math.round(math.div($grid-gutter-width, 2)) !default;
 //*****************************************
 
 @font-face {
-	font-family: "Righteous";
+	font-family: "WorkSans";
 	src: url("https://obolify.com/assets/fonts/WorkSans-Medium.ttf");
 	font-weight: normal;
 }
 @font-face {
-	font-family: "Righteous";
+	font-family: "WorkSans";
 	src: url("https://obolify.com/assets/fonts/WorkSans-Bold.ttf");
 	font-weight: bold;
 }
 
-$font-family-sans-serif: Righteous !default;
+$font-family-sans-serif: WorkSans !default;
 $font-family-monospace: "Courier New", Courier, monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
